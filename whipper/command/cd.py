@@ -449,7 +449,7 @@ Log files will log the path to tracks relative to this directory.
                     logger.warning('verification failed, reripping...')
                     os.unlink(path)
 
-            if not os.path.exists(path):
+            else:
                 logger.debug('path %r does not exist, ripping...', path)
                 # we reset durations for test and copy here
                 trackResult.testduration = 0.0
